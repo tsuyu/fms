@@ -1,0 +1,33 @@
+
+#sb {
+  margin: 8px auto;
+  overflow: auto;
+  /*  border:#333 2px solid; || <-- Border is turned off  */
+  
+}
+#shouts {
+  height: 200px;
+  border: 1px solid #ebebeb;
+}
+#shouts li {
+  list-style: none;
+  line-height: 1.7em;
+}
+input#shout {
+  height: 15px;
+}
+input#shout {
+  width: 140px;
+}
+input#submit {
+  padding: 3px 2px;
+  margin-left: 1px;
+  border: 0;
+  background: #666;
+  color: #fff;
+  cursor: pointer;
+}
+input#submit:hover {
+  background: #d3d3d3;
+  color: #666;
+}
