@@ -1,10 +1,9 @@
 <?php
 
-$from_user = 'test@umpholdings.my';
-$from_pass = 'umph123';
-$from = array('test@umpholdings.my' => 'Test UMPH');
-$to = array('mohamadyusuf@ump.edu.my' => 'Mohamad Yusuf Bin Mat Yasit',
-    'mohamadyusuf03@gmail.com' => 'Mohamad Yusuf Bin Mat Yasit');
+$from_user = 'from@test.com';
+$from_pass = '123456';
+$from = array('from@test.com' => 'From Test');
+$to = array('from@test.com' => 'To Test');
 $subject = 'Wonderful Subject';
 $textmail = '';
 $htmlmail = '<html><head><style type=\'text/css\'>body { font-family: Arial; font-size: 10pt; }p { margin: 0; }</style></head>'
@@ -18,7 +17,7 @@ function sendmail($from_user, $from_pass, $to, $from, $subject, $textmail, $html
 
     require_once './include/Swift/lib/swift_required.php';
     //Mail
-    $transport = Swift_SmtpTransport::newInstance('mail.umpholdings.my', 25)
+    $transport = Swift_SmtpTransport::newInstance('mail.test.com', 25)
             ->setUsername($from_user)
             ->setPassword($from_pass);
     //Create the Mailer using your created Transport
