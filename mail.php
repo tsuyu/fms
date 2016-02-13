@@ -3,7 +3,7 @@
 $from_user = 'from@test.com';
 $from_pass = '123456';
 $from = array('from@test.com' => 'From Test');
-$to = array('from@test.com' => 'To Test');
+$to = array('to@test.com' => 'To Test');
 $subject = 'Wonderful Subject';
 $textmail = '';
 $htmlmail = '<html><head><style type=\'text/css\'>body { font-family: Arial; font-size: 10pt; }p { margin: 0; }</style></head>'
