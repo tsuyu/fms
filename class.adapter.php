@@ -8,7 +8,7 @@
 
 class MySQL {
 
-    final public function &getInstance() {
+    final public static function &getInstance() {
 
         $obj;
         $config = array();
